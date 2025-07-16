@@ -46,10 +46,6 @@ test("Create multiple appointments from Excel", async ({ page }) => {
         .fill("Coolkaru@22");
       await page.getByRole("button", { name: "S'identifier" }).click();
 
-      await page.screenshot({ path: "before-lang-dropdown.png" });
-      console.log("Trying to click language dropdown...");
-      await page.locator(".ant-dropdown-trigger").first().click();
-
       // Change language to English after login
       await page.waitForTimeout(3000); // brief pause for page load
       await page.locator(".ant-dropdown-trigger").first().click();
