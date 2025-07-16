@@ -19,14 +19,14 @@ module.exports = defineConfig({
       args: ["--start-maximized"],
     },
   },
-  // projects: [
-  //   {
-  //     name: "chromium",
-  //     use: {
-  //       browserName: "chromium",
-  //     },
-  //   },
-  // ],
+  projects: [
+    {
+      name: "chromium",
+      use: {
+        browserName: "chromium",
+      },
+    },
+  ],
   reporter: [
     ["line"],
     [
