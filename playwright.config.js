@@ -27,5 +27,13 @@ module.exports = defineConfig({
       },
     },
   ],
-  reporter: "list",
+  reporter: [
+    ["line"],
+    [
+      "allure-playwright",
+      {
+        resultsDir: "allure-results",
+      },
+    ],
+  ],
 });
