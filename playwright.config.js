@@ -27,13 +27,14 @@ module.exports = defineConfig({
   //     },
   //   },
   // ],
-  reporter: [
-    ["line"],
-    [
-      "allure-playwright",
-      {
-        resultsDir: "allure-results",
-      },
-    ],
-  ],
+  // reporter: [
+  //   ["line"],
+  //   [
+  //     "allure-playwright",
+  //     {
+  //       resultsDir: "allure-results",
+  //     },
+  //   ],
+  // ],
+  reporter: [["html"]],
 });
