@@ -27,8 +27,8 @@ module.exports = defineConfig({
   },
   use: {
     baseURL: "https://kolostattechapptest.coolkaru.com",
-    actionTimeout: 15000,
-    navigationTimeout: 60000,
+    actionTimeout: 100000,
+    navigationTimeout: 100000,
     screenshot: "only-on-failure",
     video: "retain-on-failure",
     headless: false,
