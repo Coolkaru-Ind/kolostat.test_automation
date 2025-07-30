@@ -1,6 +1,6 @@
 // src/Common/loginHelper.js
 export async function loginToKolotech(page) {
-  await page.goto('https://kolostattechapptest.coolkaru.com/login');
+  await page.goto('https://kolostattechapptest.coolkaru.com/login', { timeout: 120000 });
   await page.getByRole('textbox', { name: "* Nom d'utilisateur" }).fill('sujithra');
   await page.getByRole('textbox', { name: "* Mot de passe" }).fill('Coolkaru@22');
   await page.getByRole('button', { name: "S'identifier" }).click();
