@@ -7,5 +7,5 @@ export async function loginToAcumatica(page) {
   await page.getByRole('button', { name: 'Sign In' }).click();
 
   // Wait for home screen to load before returning
-  await page.waitForSelector('input[placeholder="Search..."]', { timeout: 15000 });
+  await page.waitForSelector('input[placeholder="Search..."]', { timeout: 40000 });
 }
